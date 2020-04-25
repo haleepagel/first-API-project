@@ -26,11 +26,7 @@ You need: yarn, Node.js, postgres, knex, GraphQL
 
 ## Built With
 
-Dropwizard - The web framework used
-
-Maven - Dependency Management
-
-ROME - Used to generate RSS Feeds
+Things...
 
 ## Contributing
 
