@@ -7,6 +7,7 @@
     "test": "node tests/initialize.js && mocha tests/test.js && yarn lint",
     "lint": "eslint --fix .",
     "start": "node index.js",
+    "dev": "nodemon src/index.js",
     "migrate": "knex migrate:latest --knexfile models/knexfile.js",
     "rollback": "knex migrate:rollback --knexfile models/knexfile.js ",
     "precommit": "pretty-quick --staged"
@@ -31,6 +32,7 @@
     "eslint-plugin-prettier": "^3.0.0",
     "husky": "^1.1.2",
     "mocha": "^5.2.0",
+    "nodemon": "^2.0.2",
     "prettier": "^1.12.1",
     "pretty-quick": "^1.4.1",
     "sqlite3": "^4.0.9"
