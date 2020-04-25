@@ -4,6 +4,8 @@ This was created during my time as a student at Code Chrysalis.
 
 This is my first solo project creating a fullstack API. I worked with data from the MLB Angels' 2019 season using Node.js, express, GraphQL, HTML, and CSS.
 
+![MLB LA Angels Logo](images/angelsLogo.png)
+
 ## Getting Started
 
 This READ-ME file will help you install this project locally and explain how to interact with it.
