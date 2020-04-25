@@ -1,18 +1,21 @@
 # first-API-project
 
-This is my first solo project creating an API. I worked with data from the MLB Angels' 2019 season using Node.js, express, GraphQL, HTML, and CSS.
+This was created during my time as a student at Code Chrysalis.
 
-Project Title
-One Paragraph of project description goes here
+This is my first solo project creating a fullstack API. I worked with data from the MLB Angels' 2019 season using Node.js, express, GraphQL, HTML, and CSS.
 
-Getting Started
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+## Getting Started
 
-Prerequisites
-What things you need to install the software and how to install them
+This READ-ME file will help you install this project locally and explain how to interact with it.
 
-Give examples
-Installing
+## Prerequisites
+
+You need: yarn, Node.js, postgres, knex, GraphQL
+
+## Give examples
+
+### Installing
+
 A step by step series of examples that tell you how to get a development env running
 
 Say what the step will be
@@ -23,7 +26,8 @@ And repeat
 until finished
 End with an example of getting some data out of the system or using it for a little demo
 
-Running the tests
+### Running the tests
+
 Explain how to run the automated tests for this system
 
 Break down into end to end tests
@@ -37,24 +41,31 @@ Give an example
 Deployment
 Add additional notes about how to deploy this on a live system
 
-Built With
+## Built With
+
 Dropwizard - The web framework used
 Maven - Dependency Management
 ROME - Used to generate RSS Feeds
 Contributing
 Please read CONTRIBUTING.md for details on our code of conduct, and the process for submitting pull requests to us.
 
-Versioning
+## Versioning
+
 We use SemVer for versioning. For the versions available, see the tags on this repository.
 
-Authors
-Billie Thompson - Initial work - PurpleBooth
+## Authors
+
+Halee Pagel - Initial work - haleepagel
 See also the list of contributors who participated in this project.
 
-License
+## License
+
 This project is licensed under the MIT License - see the LICENSE.md file for details
 
-Acknowledgments
+## Acknowledgments
+
 Hat tip to anyone whose code was used
 Inspiration
 etc
+
+HUGE THANKS to github user @PurpleBooth for their amazing READ-ME template: <https://gist.github.com/PurpleBooth/109311bb0361f32d87a2>
