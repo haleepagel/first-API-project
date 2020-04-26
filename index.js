@@ -15,7 +15,7 @@ app.get("/", (request, response) => {
 });
 app.get("/angels2019", db.getPlayers);
 app.get("/angels2019/:Age", db.getPlayersByAge);
-app.post("/angels2019", db.createPlayer);
+app.post("/angels2019/:Name", db.createPlayer);
 app.put("/angels2019/:Name", db.updatePlayer);
 app.delete("/angels2019/:Name", db.deletePlayer);
 // get the app up and running
