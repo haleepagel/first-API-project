@@ -11,7 +11,13 @@ app.use(
   })
 );
 app.get("/", (request, response) => {
-  response.json({ info: "Node.js, Express, and Postgres API" });
+  response.json({
+    getPlayers: "/angels2019",
+    getPlayersByAge: "/angels2019/:Age",
+    createPlayer: "/angels2019/:Name",
+    updatePlayer: "/angels2019/:Name",
+    deletePlayer: "/angels2019/:Name"
+  });
 });
 app.get("/angels2019", db.getPlayers);
 app.get("/angels2019/:Age", db.getPlayersByAge);
