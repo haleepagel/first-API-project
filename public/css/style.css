@@ -1,6 +1,13 @@
 body {
   background-color: #cd1141;
 }
+#github {
+  background: #c4cdd3;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #003263;
+  text-align: center;
+}
 #angelsApp {
   background-color: #cd1141;
 }
