@@ -1,0 +1,84 @@
+body {
+  background-color: #cd1141;
+}
+#angelsApp {
+  background-color: #cd1141;
+}
+#coolStuffHere {
+  background-color: #003263;
+  text-align: center;
+  padding: 5px;
+  margin: auto;
+  color: #ffffff;
+  font-size: larger;
+  font-weight: bold;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+#terminologyHeader {
+  border-style: solid;
+  border-width: 5px;
+  border-color: #003263;
+  background: #c4cdd3;
+}
+#usernameDisplay {
+  background-color: #c4cdd3;
+  font-weight: bold;
+  color: #003263;
+  padding: auto;
+  margin-top: 10px;
+}
+
+.acronymTable {
+  border-style: solid;
+  border-width: 5px;
+  border-color: #003263;
+  background: #c4cdd3;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  overflow: hidden;
+  padding: 6px 5px;
+  word-break: normal;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+#acronymHeader {
+  text-align: right;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #003263;
+}
+#definitionHeader {
+  text-align: left;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #003263;
+  font-size: 14px;
+}
+.indivAcronym {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #003263;
+  font-size: 14px;
+  font-weight: bolder;
+  text-align: right;
+  vertical-align: middle;
+  overflow: hidden;
+  padding: 6px 5px;
+  word-break: normal;
+}
+.cellsInTable {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #003263;
+  font-size: 12px;
+  text-align: left;
+  vertical-align: middle;
+  font-weight: normal;
+}
+/*
+Midnight Blue (#003263), 
+White (#FFFFFF), 
+Lavender Gray (#C4CDD3), 
+Crimson (#CD1141) 
+and Pink Raspberry (#8F0028).
+Stadium green:#4e7776
+*/
