@@ -41,11 +41,11 @@ const getPlayersByAge = (request, response) => {
 
 // POST a new player
 const createPlayer = (request, response) => {
-  const { name } = request.body;
+  const { pos } = request.params.Pos;
   let rank = Math.floor(Math.random() * 100) + 15;
   pool.query(
-    "INSERT INTO angels2019 (Rk, Name) VALUES ($1, $2)",
-    [rank, name],
+    "INSERT INTO angels2019 (Rk, Pos) VALUES ($1, $2)",
+    [rank, pos],
     (error, results) => {
       if (error) {
         throw error;
@@ -57,35 +57,33 @@ const createPlayer = (request, response) => {
 
 // PUT modify an existing player's data
 const updatePlayer = (request, response) => {
-  const Name = request.params.Name;
+  const rk = request.params.Rk;
   const { HR, RBI } = request.body;
 
   pool.query(
-    "UPDATE angels2019 SET HR = $1, RBI = $2 WHERE Name = $3",
-    [HR, RBI, Name],
+    "UPDATE angels2019 SET HR = $1, RBI = $2 WHERE Rk = $3",
+    [HR, RBI, rk],
     (error, results) => {
       if (error) {
         throw error;
       }
-      response.status(200).send(`HRs and RBIs of ${Name} were modified.`);
+      response
+        .status(200)
+        .send(`HRs and RBIs of player with Rk #${rk} were modified.`);
     }
   );
 };
 
 // DELETE a player
 const deletePlayer = (request, response) => {
-  const Name = request.params.Name;
+  const rk = request.params.Rk;
 
-  pool.query(
-    "DELETE FROM angels2019 WHERE Name = $1",
-    [Name],
-    (error, results) => {
-      if (error) {
-        throw error;
-      }
-      response.status(200).send(`Player deleted with Name: ${Name}`);
+  pool.query("DELETE FROM angels2019 WHERE Rk = $1", [rk], (error, results) => {
+    if (error) {
+      throw error;
     }
-  );
+    response.status(200).send(`Player deleted with Rk #${rk}`);
+  });
 };
 
 // Export all of these functions
